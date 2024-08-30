@@ -1,0 +1,48 @@
+*, *::after, *::before {margin: 0;padding: 0;box-sizing: border-box;}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #6a5acd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1px);
+  height: auto;
+  font-family: cursive;
+  text-align: center;
+}
+
+.calender-card {
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 0 .5rem;
+  overflow: hidden;
+  width: clamp(150px, 100%, 300px);
+  min-width: 150px;
+  .month {
+    background-color: #ff5200;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .rest-details {
+    .day {
+      font-size: 1.5rem;
+    }
+    .day-num {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .year-num {
+      font-size: 1.4rem;
+    }
+    .day, .year-num {
+      color: #6a5acd;
+    }
+    * {
+      margin: .5em;
+    }
+  }
+}
+
